@@ -1,0 +1,36 @@
+.container{
+    max-width: 120rem;
+    margin: 8rem auto;
+    background-color: var(--color-grey-light-2);
+    box-shadow: var(--box-shadow-dark);
+    min-height:50rem;
+}
+
+.header {
+    height:7rem;
+    background-color: #fff;
+    border-bottom: var(--color-grey-light-2) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.content-body {
+    display:flex;
+}
+
+.sidebar {
+    background-color: var(--color-grey-dark-1);
+    flex: 0 0 20%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.hotel-view {
+    background-color:  orangered;
+    flex: 1; //la primera propiedad indica si puede crecer 1 es true y de este forma ocupa todo el espacio posible
+    height:80rem;
+}
