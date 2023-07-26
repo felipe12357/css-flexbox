@@ -1,0 +1,64 @@
+.hotel-view {
+    flex: 1; //la primera propiedad indica si puede crecer 1 es true y de este forma ocupa todo el espacio posible
+    height:80rem;
+}
+
+.overview {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--color-grey-light-3) ;
+
+    &__heading {
+        font-size: 2.25rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding:1.5rem 3rem
+    }
+
+    &__stars {
+        //importante este truco sirve con flexbox...
+        //crea una margen q ocupa el espacio sobrante
+        margin-right: auto;
+    }
+
+    &__icon-star,
+    &__icon-location {
+        width: 1.75rem;
+        height: 1.75rem;
+        fill:var(--color-primary);
+    }
+
+    &__location {
+        font-size:1.2rem;
+        display:flex;
+        vertical-align: center;
+    }
+
+    &__icon-location {
+        margin-right: .5rem;
+    }
+
+    &__rating {
+        background-color: var(--color-primary);
+        margin-left: 3rem;
+        color:var(--color-white);
+        padding:0 2.25rem;
+        align-self: stretch; //permite q solo este elemento se alinee de una forma diferente en este caso strech y ocupe el 100 del alto
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__rating-average{
+        font-size: 2.25rem;
+        font-weight: 300;
+    }
+
+    &__rating-count {
+        font-size: .8rem;
+        text-transform: uppercase;
+    }
+}

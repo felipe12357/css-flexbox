@@ -9,7 +9,7 @@
 .header {
     height:7rem;
     background-color: #fff;
-    border-bottom: var(--color-grey-light-2) ;
+    border-bottom: 1px solid var(--color-grey-light-3) ;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,8 +29,3 @@
     flex-direction: column;
 }
 
-.hotel-view {
-    background-color:  orangered;
-    flex: 1; //la primera propiedad indica si puede crecer 1 es true y de este forma ocupa todo el espacio posible
-    height:80rem;
-}
