@@ -1,4 +1,4 @@
-.bnt-inline {
+.btn-inline {
     border:none;
     color: var(--color-primary);
     font-size: inherit;
@@ -9,8 +9,17 @@
     cursor: pointer;
     transition: 1s;
 
+    & span {
+        margin-left:3px;
+        transition: margin-left .2s;
+    }
+
     &:hover {
         color:var(--color-grey-dark-1);
+
+        span {
+            margin-left:8px
+        }
     }
 
     &:focus {
